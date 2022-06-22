@@ -1,4 +1,4 @@
-FROM nginx:1.19
+FROM nginx:1.18
 
 ##### CAUTION - Real Malware do not execute locally #####
 #ADD "https://raw.githubusercontent.com/APuggioli/MySamples/main/Kinsing_Malware" /root/maliciousfile
