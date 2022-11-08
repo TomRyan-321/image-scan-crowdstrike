@@ -19,7 +19,7 @@ jobs:
       run: docker build -t $ECR_REGISTRY/$ECR_REPO:$IMAGE_TAG .
 
     - name: Scan Container Image
-      uses: CrowdStrike/container-image-scan-action@v0.5
+      uses: CrowdStrike/container-image-scan-action@v0.7
       with:
         container_repository: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPO }}
         container_tag: ${{ env.IMAGE_TAG }}
