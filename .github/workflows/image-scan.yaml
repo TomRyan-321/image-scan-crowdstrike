@@ -36,11 +36,11 @@ jobs:
         jq '.' /tmp/report.json
 
     # - name: Configure AWS credentials
-    #  uses: aws-actions/configure-aws-credentials@v1
-    #  with:
-    #    role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID}}:role/${{ secrets.ROLE_NAME }}
-    #    role-session-name: ${{ secrets.ROLE_NAME }}
-    #    aws-region: us-west-2
+    #   uses: aws-actions/configure-aws-credentials@v1
+    #   with:
+    #     role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID}}:role/${{ secrets.ROLE_NAME }}
+    #     role-session-name: ${{ secrets.ROLE_NAME }}
+    #     aws-region: us-west-2
 
     # - name: Login to ECR
     #   uses: aws-actions/amazon-ecr-login@v1
